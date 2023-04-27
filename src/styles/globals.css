@@ -6,9 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+
+  --padding-small2: 8;
+  --padding-small: 16;
+  --padding-normal: 32;
+  --padding-large: 64;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
@@ -24,4 +29,11 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.block-normal {
+  padding-left  : var(--padding-small2);
+  padding-right : var(--padding-small2);
+  padding-top   : var(--padding-normal);
+  padding-bottom: var(--padding-normal);
 }

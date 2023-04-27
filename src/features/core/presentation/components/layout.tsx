@@ -1,6 +1,7 @@
 import Head from "next/head";
-import Link from "next/link";
 import { ReactNode } from "react";
+import { NavBar } from "./nav-bar";
+import { FooterBlock } from "./footer-block";
 
 type LayoutParams = {
   children?: ReactNode,
@@ -22,15 +23,13 @@ export const Layout = (
       </Head>
 
       <header>
-        <nav>
-          <Link href="/">Home</Link>
-        </nav>
+        <NavBar />
       </header>
 
       <main>{children}</main>
 
       <footer>
-        <h1>This is the footer</h1>
+        <FooterBlock />
       </footer>
     </div>
   );
