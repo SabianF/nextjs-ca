@@ -31,6 +31,24 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+header {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 1rem auto 1rem;
+}
+
+footer {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 1rem auto 1rem;
+}
+
+.layout {
+  max-width: 36rem;
+  padding: 0 1rem;
+  margin: 4rem auto 4rem;
+}
+
 .block-normal {
   padding-left  : var(--padding-small2);
   padding-right : var(--padding-small2);

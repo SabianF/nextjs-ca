@@ -26,7 +26,7 @@ export const Layout = (
         <NavBar />
       </header>
 
-      <main>{children}</main>
+      <main className="layout">{children}</main>
 
       <footer>
         <FooterBlock />
