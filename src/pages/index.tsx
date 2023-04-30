@@ -6,6 +6,7 @@ export default function Home() {
   return (
     <Layout title="Home">
       <h1>NextJS using Clean Architecture</h1>
+      <div style={{height: 1280}}></div>
     </Layout>
   )
 }

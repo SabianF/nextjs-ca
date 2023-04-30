@@ -15,7 +15,7 @@ export const Layout = (
   }: LayoutParams,
 ) => {
   return (
-    <div>
+    <div className="container">
       <Head>
         <title>{title}</title>
       </Head>
@@ -24,7 +24,7 @@ export const Layout = (
         <NavBar />
       </header>
 
-      <main className="layout">{children}</main>
+      <main>{children}</main>
 
       <footer>
         <FooterBlock />
