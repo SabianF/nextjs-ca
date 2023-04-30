@@ -1,4 +1,5 @@
 
+import { Block } from "@/features/core/presentation/components/block";
 import { Layout } from "@/features/core/presentation/components/layout";
 
 export default function Home() {

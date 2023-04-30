@@ -7,10 +7,10 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 
-  --padding-small2: 8;
-  --padding-small: 16;
-  --padding-normal: 32;
-  --padding-large: 64;
+  --padding-small2: 8px;
+  --padding-small: 16px;
+  --padding-normal: 32px;
+  --padding-large: 64px;
 }
 
 @media (prefers-color-scheme: light) {
@@ -50,8 +50,6 @@ footer {
 }
 
 .block-normal {
-  padding-left  : var(--padding-small2);
-  padding-right : var(--padding-small2);
   padding-top   : var(--padding-normal);
   padding-bottom: var(--padding-normal);
 }
