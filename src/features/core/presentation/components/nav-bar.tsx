@@ -1,13 +1,12 @@
 import Link from "next/link";
+import { NavTextButton } from "./nav-text-button";
 
 export const NavBar = () => {
   return (
-    <div className="bg-primary-subtle">
+    <div className="bg-white">
       <nav className="nav">
-        <Link className="nav-link active" aria-current="page" href="/">Home</Link>
-        <Link className="nav-link" href="">Link</Link>
-        <Link className="nav-link" href="">Link</Link>
-        <Link className="nav-link disabled" href="">Disabled</Link>
+        <NavTextButton href="/">Home</NavTextButton>
+        <NavTextButton href="/test">One</NavTextButton>
       </nav>
     </div>
   );

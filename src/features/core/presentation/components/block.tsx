@@ -15,13 +15,15 @@ export const Block = (
     size,
   }: BlockProps,
 ) => {
+  const baseClasses = "block-normal ";
+
   if (size! == BlockSize.normal) {
     return (
-      <div className="block-normal">{children}</div>
+      <div className={baseClasses}>{children}</div>
     );
   }
 
   return (
-    <div className="block-normal">{children}</div>
+    <div className={baseClasses}>{children}</div>
   );
 }

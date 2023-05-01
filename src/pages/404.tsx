@@ -1,14 +1,12 @@
-
 import { Block } from "@/features/core/presentation/components/block";
 import { Layout } from "@/features/core/presentation/components/layout";
 
-export default function Home() {
+export default function NotFound()  {
   return (
-    <Layout title="Home">
+    <Layout>
       <Block>
-        <h1>NextJS using Clean Architecture</h1>
+        <h1>Not found</h1>
       </Block>
-      <div style={{height: 1280}}></div>
     </Layout>
-  )
+  );
 }
