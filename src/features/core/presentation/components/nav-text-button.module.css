@@ -1,0 +1,17 @@
+
+.paddingDefault {
+  padding-left: var(--spacing-base);
+  padding-right: var(--spacing-base);
+}
+
+.colorDefault {
+  color: var(--color-black);
+}
+
+.colorDisabled {
+  color: var(--color-grey);
+}
+
+.colorActive {
+  color: var(--color-link);
+}

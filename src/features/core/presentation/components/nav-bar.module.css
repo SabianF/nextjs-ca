@@ -1,0 +1,8 @@
+
+.bg {
+  background-color: var(--color-white);
+}
+
+.nav {
+  padding: var(--spacing-base);
+}

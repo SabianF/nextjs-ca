@@ -1,5 +1,7 @@
 import { ReactNode } from "react";
 
+import styles from './block.module.css';
+
 enum BlockSize {
   normal,
 }
@@ -15,15 +17,13 @@ export const Block = (
     size,
   }: BlockProps,
 ) => {
-  const baseClasses = "block-normal ";
-
   if (size! == BlockSize.normal) {
     return (
-      <div className={baseClasses}>{children}</div>
+      <div className={styles.normal}>{children}</div>
     );
   }
 
   return (
-    <div className={baseClasses}>{children}</div>
+    <div className={styles.normal}>{children}</div>
   );
 }

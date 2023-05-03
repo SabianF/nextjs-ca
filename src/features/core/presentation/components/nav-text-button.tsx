@@ -1,6 +1,8 @@
 import Link from "next/link";
 import { ReactNode } from "react";
 
+import styles from "./nav-text-button.module.css";
+
 type NavTextButtonProps = {
   href?: string,
   disabled?: boolean,
@@ -24,7 +26,7 @@ export const NavTextButton = (
 
   return (
     <Link
-      className="nav-link"
+      className={[styles.paddingDefault, styles.colorDefault].join(' ')}
       href={href}
     >
       {children}

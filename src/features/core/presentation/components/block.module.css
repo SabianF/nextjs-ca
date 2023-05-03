@@ -1,0 +1,5 @@
+
+.normal {
+  padding-top   : var(--spacing-base);
+  padding-bottom: var(--spacing-base);
+}
