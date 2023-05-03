@@ -8,7 +8,6 @@ export default function Home() {
       <Block>
         <h1>NextJS using Clean Architecture</h1>
       </Block>
-      <div style={{height: 1280}}></div>
     </Layout>
   )
 }
