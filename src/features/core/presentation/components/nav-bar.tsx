@@ -7,7 +7,7 @@ export const NavBar = () => {
     <div className={styles.bg}>
       <nav className={styles.nav}>
         <NavTextButton href="/">Home</NavTextButton>
-        <NavTextButton href="/test">One</NavTextButton>
+        <NavTextButton href="/test">Test Page</NavTextButton>
       </nav>
     </div>
   );
