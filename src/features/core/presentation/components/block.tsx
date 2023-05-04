@@ -2,28 +2,24 @@ import { ReactNode } from "react";
 
 import styles from './block.module.css';
 
-enum BlockSize {
-  normal,
-}
-
 type BlockProps = {
   children?: ReactNode,
-  size?: BlockSize,
+  className?: string[],
 }
 
 export const Block = (
   {
     children,
-    size,
+    className = [],
   }: BlockProps,
 ) => {
-  if (size! == BlockSize.normal) {
-    return (
-      <div className={styles.normal}>{children}</div>
-    );
-  }
-
   return (
-    <div className={styles.normal}>{children}</div>
+    <div className={[
+      styles.default,
+      className.join(' '),
+      ].join(' ')}
+    >
+      {children}
+    </div>
   );
 }
