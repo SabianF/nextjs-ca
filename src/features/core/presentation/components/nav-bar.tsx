@@ -1,14 +1,17 @@
 import { NavTextButton } from "./nav-text-button";
 
 import styles from "./nav-bar.module.css";
+import { Navbar } from "@nextui-org/react";
 
 export const NavBar = () => {
   return (
     <div className={styles.bg}>
-      <nav className={styles.nav}>
-        <NavTextButton href="/">Home</NavTextButton>
-        <NavTextButton href="/test">Test Page</NavTextButton>
-      </nav>
+      <Navbar>
+        <Navbar.Content>
+          <Navbar.Link href="/">Home</Navbar.Link>
+          <Navbar.Link href="/test">Test Page</Navbar.Link>
+        </Navbar.Content>
+      </Navbar>
     </div>
   );
 }
