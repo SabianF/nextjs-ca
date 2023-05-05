@@ -1,17 +1,17 @@
-import { NavTextButton } from "./nav-text-button";
+
+import NavBarComp from "../../domain/repositories/components";
 
 import styles from "./nav-bar.module.css";
-import { Navbar } from "@nextui-org/react";
 
 export const NavBar = () => {
   return (
     <div className={styles.bg}>
-      <Navbar>
-        <Navbar.Content>
-          <Navbar.Link href="/">Home</Navbar.Link>
-          <Navbar.Link href="/test">Test Page</Navbar.Link>
-        </Navbar.Content>
-      </Navbar>
+      <NavBarComp>
+        <NavBarComp.Content>
+          <NavBarComp.Link href="/">Home</NavBarComp.Link>
+          <NavBarComp.Link href="/test">Test Page</NavBarComp.Link>
+        </NavBarComp.Content>
+      </NavBarComp>
     </div>
   );
 }
