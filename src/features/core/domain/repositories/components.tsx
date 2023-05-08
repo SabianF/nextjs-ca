@@ -1,15 +1,15 @@
 
-import { Navbar } from "@nextui-org/react";
+import { Navbar as NavbarNextUI } from "@nextui-org/react";
 import { ReactNode } from "react"
 
 type NavBarCompProps = { children?: ReactNode }
 
-const NavBarComp = ({children}: NavBarCompProps) => <Navbar>{children}</Navbar>
+const NavBarComp = ({children}: NavBarCompProps) => <NavbarNextUI>{children}</NavbarNextUI>
 
 type NavBarCompContentProps = { children?: ReactNode }
 const NavBarCompContent = ({
   children
-}: NavBarCompContentProps) => <Navbar.Content>{children}</Navbar.Content>
+}: NavBarCompContentProps) => <NavbarNextUI.Content>{children}</NavbarNextUI.Content>
 
 type NavBarCompLinkProps = {
   children?: ReactNode,
@@ -20,7 +20,7 @@ const NavBarCompLink = ({
   href = "#",
 }: NavBarCompLinkProps) => {
   return (
-    <Navbar.Link href={href}>{children}</Navbar.Link>
+    <NavbarNextUI.Link href={href}>{children}</NavbarNextUI.Link>
   );
 }
 
